@@ -141,7 +141,7 @@ setStep(number+1)
                 <Button
                   size="lg"
                   variant="secondary"
-                  onClick={() => checkDataValidation(1)}
+                  onClick={() => setStep(step+1)}
                   className="nxt-btn"
                 >
                   Next
