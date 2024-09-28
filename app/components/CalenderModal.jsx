@@ -5,6 +5,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import DatePicker from "react-datepicker";
 import { Col, Form, Row } from "react-bootstrap";
 import Image from "next/image";
+import customeApiFunction from "../Api/customeApi";
 
 const CalenderModal = (props) => {
   const [selectedDate, setSelectedDate] = useState(new Date());
@@ -12,10 +13,10 @@ const CalenderModal = (props) => {
   const [step, setStep] = useState(1);
   const [booking,setBooking]=useState(
     {
-      "date":"",
-      "slot":"",
+      "date":"29-09-2024",
+      "slot":"1",
       "package_id":2,
-      "amount":null,
+      "amount":10,
       "customer":{
         "first_name":"",
         "last_name":"",
@@ -61,6 +62,22 @@ setStep(number+1)
     "9:30 PM",
     "10:00 PM",
   ];
+
+
+
+
+  const makePayment = async (e) => {
+
+
+    try {
+      const response = await customeApiFunction('POST', '/reservation', booking);
+      console.log('Booking created:', response);
+      alert('Booking successfully created');
+    } catch (error) {
+      console.error('Error creating booking:', error);
+      alert('Failed to create booking');
+    }
+  };
 
   return (
     <Modal
@@ -110,10 +127,12 @@ setStep(number+1)
                   selectedTime={selectedTime}
                   setSelectedTime={setSelectedTime}
                   times={times}
+                  booking={booking}
+                  setBooking={setBooking}
                 />
               )}
               {step === 2 && <StepTwo booking={booking} setBooking={setBooking} />}
-              {step === 3 && <StepThree />}
+              {step === 3 && <StepThree   booking={booking} setBooking={setBooking} />}
             </div>
           </Col>
         </Row>
@@ -151,7 +170,7 @@ setStep(number+1)
                 <Button
                   size="lg"
                   variant="secondary"
-                  onClick={() => alert("Payment Successfull")}
+                  onClick={() => makePayment()}
                 >
                   Make Payment
                 </Button>
@@ -172,7 +191,13 @@ export const StepOne = ({
   selectedTime,
   setSelectedTime,
   times,
+  booking,
+  setBooking
 }) => {
+
+
+  console.log(booking,"pranabbaba");
+  
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <div className="mdl-title">
@@ -181,7 +206,7 @@ export const StepOne = ({
 
       <DatePicker
         selected={selectedDate}
-        onChange={(date) => setSelectedDate(date)}
+        onChange={(date) => setBooking({...booking,date:date})}
         inline
         minDate={new Date()}
       />
@@ -193,7 +218,7 @@ export const StepOne = ({
             size="lg"
             key={index}
             variant={selectedTime === time ? "primary" : "outline-secondary"}
-            onClick={() => setSelectedTime(time)}
+            onClick={() => setBooking({...booking,time:time})}
             style={{ margin: "5px" }}
           >
             {time}
@@ -205,6 +230,8 @@ export const StepOne = ({
 };
 
 export const StepTwo = ({booking,setBooking}) => {
+ 
+  
   const times = [
     "6:00 PM",
     "6:30 PM",
@@ -228,18 +255,52 @@ export const StepTwo = ({booking,setBooking}) => {
   });
 
   const handleInputChange = (e) => {
+    
     e.preventDefault(); 
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+
+    // Update the customer field inside the booking object
+    setBooking((prevBooking) => ({
+      ...prevBooking, // Keep all other fields in booking the same
+      customer: {
+        ...prevBooking.customer, // Keep other customer fields the same
+        [name]: value, // Only update the field that changed
+      },
+    }));
+
+
+
   };
 
+
+  const handleInputChange2= (e) => {
+    
+    e.preventDefault(); 
+    const { name, value } = e.target;
+
+    // Update the customer field inside the booking object
+    setBooking((prevBooking) => ({
+      ...prevBooking, // Keep all other fields in booking the same
+      vehicle: {
+        ...prevBooking.vehicle, // Keep other customer fields the same
+        [name]: value, // Only update the field that changed
+      },
+    }));
+
+
+
+  };
+
+
+
+console.log(booking,"OOOOOOGGGGG")
   const handleSubmit = (e) => {
   
   e.preventDefault()
-  console.log(formData,"PRURURURURURURUR");
+
   
   };
-  console.log("submitted:", formData);
+  console.log("submitted:", booking,formData);
   return (
     <div className="customer-details">
       <div className="mdl-title">
@@ -254,8 +315,8 @@ export const StepTwo = ({booking,setBooking}) => {
               <Form.Control
                 placeholder="First name*"
                 type="text"
-                name="firstName"
-                value={formData.firstName}
+                name="first_name"
+                // value={formData.firstName}
                 onChange={handleInputChange}
                 required
               />
@@ -267,8 +328,8 @@ export const StepTwo = ({booking,setBooking}) => {
               <Form.Control
                 placeholder="Last name*"
                 type="text"
-                name="lastName"
-                value={formData.lastName}
+                name="last_name"
+                // value={formData.lastName}
                 onChange={handleInputChange}
                 required
               />
@@ -280,7 +341,7 @@ export const StepTwo = ({booking,setBooking}) => {
                 placeholder="Email*"
                 type="email"
                 name="email"
-                value={formData.email}
+                // value={formData.email}
                 onChange={handleInputChange}
                 required
               />
@@ -292,7 +353,7 @@ export const StepTwo = ({booking,setBooking}) => {
                 placeholder="Phone*"
                 type="text"
                 name="phone"
-                value={formData.phone}
+                // value={formData.phone}
                 onChange={handleInputChange}
                 required
               />
@@ -304,11 +365,11 @@ export const StepTwo = ({booking,setBooking}) => {
           <Col md={12}>
             <Form.Group controlId="formVehicleModel">
               <Form.Control
-                placeholder="Vehicle Model*"
+                placeholder="Vehicle License No*"
                 type="text"
-                name="vehicleModel"
-                value={formData.vehicleModel}
-                onChange={handleInputChange}
+                name="license_plate_no"
+                // value={formData.vehicleModel}
+                onChange={handleInputChange2}
                 required
               />
             </Form.Group>
@@ -316,11 +377,11 @@ export const StepTwo = ({booking,setBooking}) => {
           <Col md={12}>
             <Form.Group controlId="formVehicleNumber">
               <Form.Control
-                placeholder="Vehicle Number*"
+                placeholder="Vehicle Description*"
                 type="text"
-                name="vehicleNumber"
-                value={formData.vehicleNumber}
-                onChange={handleInputChange}
+                name="description"
+                // value={formData.vehicleNumber}
+                onChange={handleInputChange2}
                 required
               />
             </Form.Group>
@@ -330,9 +391,9 @@ export const StepTwo = ({booking,setBooking}) => {
               <Form.Control
                 placeholder="Vehicle Color"
                 as="select"
-                name="vehicleColor"
-                value={formData.vehicleColor}
-                onChange={handleInputChange}
+                name="color"
+                // value={formData.vehicleColor}
+                onChange={handleInputChange2}
               >
                 <option>Choose color</option>
                 <option>Black</option>
@@ -389,7 +450,8 @@ export const StepTwo = ({booking,setBooking}) => {
   );
 };
 
-export const StepThree = () => {
+export const StepThree = ({booking,setBooking}) => {
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -404,17 +466,23 @@ export const StepThree = () => {
     saveCard: false,
   });
 
-  const handleInputChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setFormData({
-      ...formData,
-      [name]: type === "checkbox" ? checked : value,
-    });
-  };
 
-  const handleSubmit = () => {
-    // Handle form submission logic here (e.g., API call)
-    console.log("Form data submitted:", formData);
+  const handleInputChange= (e) => {
+    
+    e.preventDefault(); 
+    const { name, value } = e.target;
+
+    // Update the customer field inside the booking object
+    setBooking((prevBooking) => ({
+      ...prevBooking, // Keep all other fields in booking the same
+      card: {
+        ...prevBooking.card, // Keep other customer fields the same
+        [name]: value, // Only update the field that changed
+      },
+    }));
+
+
+
   };
   return (
     <>
@@ -451,8 +519,8 @@ export const StepThree = () => {
                     <Form.Control
                       type="text"
                       placeholder="Card Number*"
-                      name="cardNumber"
-                      value={formData.cardNumber}
+                      name="card_no"
+                      // value={formData.cardNumber}
                       onChange={handleInputChange}
                       required
                     />
@@ -463,8 +531,8 @@ export const StepThree = () => {
                     <Form.Control
                       type="text"
                       placeholder="MM/YY*"
-                      name="expiryDate"
-                      value={formData.expiryDate}
+                      name="expiry"
+                      // value={formData.expiryDate}
                       onChange={handleInputChange}
                       required
                     />
@@ -476,7 +544,7 @@ export const StepThree = () => {
                       type="text"
                       placeholder="CVV*"
                       name="cvv"
-                      value={formData.cvv}
+                      // value={formData.cvv}
                       onChange={handleInputChange}
                       required
                     />
