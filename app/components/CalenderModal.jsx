@@ -70,7 +70,7 @@ setStep(number+1)
 
 
     try {
-      const response = await customeApiFunction('POST', '/reservation', booking);
+      const response = await customeApiFunction('POST', 'reservation', booking);
       console.log('Booking created:', response);
       alert('Booking successfully created');
     } catch (error) {
