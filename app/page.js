@@ -35,7 +35,7 @@ const Home = () => {
   const sliderItems = [
     { image: carouselOne, text: "Check Valet Private Event Deposit One" },
     { image: carouselTwo, text: "Check Valet Private Event Deposit Two" },
-    { image: carouselThree, text: "Check Valet Private Event Deposit Three" },
+    { image: carouselThree, text: "Check Valet Private Event Deposit three" },
   ];
 
   const settings = {
