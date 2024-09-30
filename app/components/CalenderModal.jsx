@@ -11,9 +11,10 @@ const CalenderModal = (props) => {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [selectedTime, setSelectedTime] = useState(null);
   const [step, setStep] = useState(1);
+  console.log(props,"PRANAB")
   const [booking,setBooking]=useState(
     {
-      "date":"29-09-2024",
+      "date":"",
       "slot":"",
       "package_id":2,
       "amount":10,
@@ -72,6 +73,30 @@ setStep(number+1)
     try {
       const response = await customeApiFunction('POST', 'reservation', booking);
       console.log('Booking created:', response);
+      props.onHide(false)
+      setStep(1)
+      setBooking({
+        "date":"",
+      "slot":"",
+      "package_id":2,
+      "amount":10,
+      "customer":{
+        "first_name":"",
+        "last_name":"",
+        "phone":"",
+        "email":""
+      },
+      "vehicle":{
+        "license_plate_no":"",
+        "description":"",
+        "color":""
+      },
+      "card":{
+        "card_no":"",
+        "expiry":"",
+        "cvv":""
+      }
+      })
       alert('Booking successfully created');
     } catch (error) {
       console.error('Error creating booking:', error);
@@ -132,7 +157,7 @@ setStep(number+1)
                 />
               )}
               {step === 2 && <StepTwo booking={booking} setBooking={setBooking} />}
-              {step === 3 && <StepThree   booking={booking} setBooking={setBooking} />}
+              {step === 3 && <StepThree   booking={booking} setBooking={setBooking} onHide={props.onHide} />}
             </div>
           </Col>
         </Row>

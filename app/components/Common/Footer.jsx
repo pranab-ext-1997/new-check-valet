@@ -87,7 +87,7 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col md={2}>
+          {/* <Col md={2}>
             <h5>Services1</h5>
             <ul>
               <li>
@@ -120,7 +120,7 @@ const Footer = () => {
                 <a href="#">Privacy Policy</a>
               </li>
             </ul>
-          </Col>
+          </Col> */}
         </Row>
 
         <div className="get-it-now">
