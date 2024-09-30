@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 
-const API_BASE_URL = 'https://willingly-superb-finch.ngrok-free.app/check-val/wp-json/checkvalet/v2'; 
+const API_BASE_URL = 'http://3.133.110.173/checkvalet/wp-json/checkvalet/v2'; 
 
 const apiRequest = async (method, path, data = null) => {
   const url = `${API_BASE_URL}${path}`;

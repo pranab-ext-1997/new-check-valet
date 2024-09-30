@@ -6,7 +6,7 @@ import DatePicker from "react-datepicker";
 import { Col, Form, Row } from "react-bootstrap";
 import Image from "next/image";
 import customeApiFunction from "../Api/customeApi";
-
+import moment from "moment";
 const CalenderModal = (props) => {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [selectedTime, setSelectedTime] = useState(null);
@@ -14,7 +14,7 @@ const CalenderModal = (props) => {
   const [booking,setBooking]=useState(
     {
       "date":"29-09-2024",
-      "slot":"1",
+      "slot":"",
       "package_id":2,
       "amount":10,
       "customer":{
@@ -196,7 +196,7 @@ export const StepOne = ({
 }) => {
 
 
-  console.log(booking,"pranabbaba");
+ 
   
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
@@ -205,9 +205,9 @@ export const StepOne = ({
       </div>
 
       <DatePicker
-        selected={selectedDate}
-        onChange={(date) => setBooking({...booking,date:date})}
-        inline
+       selected={booking.date ? new Date(moment(booking.date, 'YYYY-MM-DD').toDate()) : null} // Convert back to Date object
+       onChange={(date) => setBooking({ ...booking, date: moment(date).format('YYYY-MM-DD') })} // Format and store in booking state
+       inline
         minDate={new Date()}
       />
 
@@ -218,7 +218,7 @@ export const StepOne = ({
             size="lg"
             key={index}
             variant={selectedTime === time ? "primary" : "outline-secondary"}
-            onClick={() => setBooking({...booking,time:time})}
+            onClick={() => setBooking({...booking,slot:time})}
             style={{ margin: "5px" }}
           >
             {time}
