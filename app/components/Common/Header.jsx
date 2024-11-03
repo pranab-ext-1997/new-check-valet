@@ -81,7 +81,7 @@ const Header = () => {
         className={`fixed-top ${isSticky ? "sticky" : ""}`}
       >
         <Container fluid>
-          {console.log(content?.header?.logo,"contentcontent")}
+          {console.log(content?.header?.logo, "contentcontent")}
           <Navbar.Brand onClick={() => router.push("/")}>
             <Image src={content?.header?.logo} alt="logo" className="App-logo" width={150} height={50} />
           </Navbar.Brand>
@@ -89,9 +89,15 @@ const Header = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="m-auto">
               {content?.headerMenu?.map((data, index) => (
-                <Nav.Link key={index} onClick={() => router.push(data?.url)}>
-                  {data?.title}
-                </Nav.Link>
+                (data?.title !== 'More' && data?.title !== 'The Experience' && data?.title !== 'Store') ? (
+                  <Nav.Link key={index} onClick={() => router.push(data?.url)}>
+                    {data?.title}
+                  </Nav.Link>
+                ) : (
+                  <Nav key={index} style={{ padding: '6px 10px', fontSize:'14px' }}>
+                    {data?.title}
+                  </Nav>
+                )
               ))}
             </Nav>
             <div className="right-side d-flex align-items-center">
@@ -113,6 +119,7 @@ const Header = () => {
               </a>
             </div>
           </Navbar.Collapse>
+
         </Container>
       </Navbar>
     </header>
