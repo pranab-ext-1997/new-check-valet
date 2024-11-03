@@ -298,6 +298,17 @@ header .dropdown-toggle::after {
   max-width: 683px;
   width: 100%;
 }
+a{
+  cursor: pointer;
+}
+.hero-section .wh-btn:hover{
+  background-color: #8182e7;
+  color: #fff;
+}
+.hero-section .cl-btn:hover{
+  background-color: #fff;
+  color: #000;
+}
 .hero-section .content-bx span {
   color: #000000c9;
   font-size: 16px;

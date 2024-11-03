@@ -81,8 +81,9 @@ const Header = () => {
         className={`fixed-top ${isSticky ? "sticky" : ""}`}
       >
         <Container fluid>
+          {console.log(content?.header?.logo,"contentcontent")}
           <Navbar.Brand onClick={() => router.push("/")}>
-            <Image src={logo} alt="logo" className="App-logo" width={150} height={50} />
+            <Image src={content?.header?.logo} alt="logo" className="App-logo" width={150} height={50} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
