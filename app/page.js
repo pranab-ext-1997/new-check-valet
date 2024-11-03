@@ -5,9 +5,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import servicecar from "./assets/images/service-car.png";
-import carouselOne from "./assets/images/carousel-img-one.png";
-import carouselTwo from "./assets/images/carousel-img-two.png";
-import carouselThree from "./assets/images/r-event.png";
+import carouselOne from "./assets/images/pexels-brett-sayles-1756957.jpg";
+import carouselTwo from "./assets/images/pexels-junnoet-235222.jpg";
+import carouselThree from "./assets/images/machuda.jpg";
 import { Container, Button, Col, Row } from "react-bootstrap";
 import { useRouter } from "next/navigation";
 import leftArrow from "./assets/images/icon/left-arrow-icon.svg";
