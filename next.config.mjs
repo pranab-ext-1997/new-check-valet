@@ -1,7 +1,14 @@
 // next.config.mjs
 const nextConfig = {
   images: {
-    domains: ['3.133.110.173'], // Add the IP address here to allow Next.js to load images from this domain
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: '3.133.110.173',
+        port: '', // Leave empty if not using a specific port
+        pathname: '/checkvalet/wp-content/uploads/**', // Adjust path as needed
+      },
+    ],
   },
   webpack(config) {
     // Add a rule to handle video files
