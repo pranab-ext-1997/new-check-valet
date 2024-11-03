@@ -118,7 +118,7 @@ setStep(number+1)
                 </Modal.Title> */}
       </Modal.Header>
       <Modal.Body>
-        <Row>
+        <Row className="gx-lg-5">
           <Col lg={6}>
             <div className="mdl-title">
               <h2> Make a reservation</h2>
@@ -163,14 +163,10 @@ setStep(number+1)
         </Row>
 
         <Row>
-          <Col md={6}></Col>
-          <Col md={6}>
-            <div
-              style={{
-                display: "flex",
-                gap: "1rem",
-                justifyContent: "flex-end",
-              }}
+          <Col sm={12} lg={6}></Col>
+          <Col sm={12}  lg={6}>
+            <div className="modal-btn-wrap"
+             
             >
               {step !== 1 && (
                 <Button

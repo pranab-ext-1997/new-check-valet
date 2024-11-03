@@ -10,6 +10,7 @@ import partnerfive from '../assets/images/partner-five.png';
 import partnersix from '../assets/images/partner-six.png';
 import ReservationCards from '../components/ReservationCards';
 import innerbanner from '../assets/images/inner-banner.png';
+import reservationbtm from '../assets/images/reservation-btm.png';
 import { useRouter } from 'next/navigation';
 import Pagination from 'react-bootstrap/Pagination';
 
@@ -55,9 +56,9 @@ const Reservation = () => {
             <Row className="gx-4">
 
               {arrayValues.map((val, index) => (
-                <Col md={4}
+                <Col lg={4} md={6}
                   key={index}
-                  className="mb-5"
+                  className="mb-3 mb-md-3 mb-lg-4"
                 >
                   <div>
                     <ReservationCards val={val} />
@@ -77,6 +78,12 @@ const Reservation = () => {
             <Pagination.Next />
           </Pagination>
 
+        </Container>
+      </section>
+
+      <section className="reservation-btm"  style={{ backgroundImage: `url(${reservationbtm.src})` }}>
+        <Container>
+          <p> by clicking SUBMIT you consent to receiving SMS messages. Messages and Data rates may apply. Message frequency will vary. Reply Help to get more assistance. Reply Stop to Opt-out of messaging" </p>
         </Container>
       </section>
     </>

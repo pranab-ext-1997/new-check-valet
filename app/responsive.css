@@ -1,15 +1,497 @@
 @media only screen and (min-width: 1340px) {
-       .home-f-events .txt-content {
-         padding-left: calc((100vw - 1387px) / 2);
-       }
-       .home-f-events .txt-content-gap {
-            padding-left: 35px;
-        }
-     }
-     
-     @media only screen and (max-width: 1340px) {
-            .home-f-events .txt-content-gap {
-                   padding-left: 11px;
-               }
-          }
-          
+  .home-f-events .txt-content {
+    padding-left: calc((100vw - 1387px) / 2);
+  }
+  .home-f-events .txt-content-gap {
+    padding-left: 35px;
+  }
+  .valet-project .content-side {
+    padding-right: calc((100vw - 1328px) / 2);
+  }
+}
+
+@media only screen and (max-width: 1340px) {
+  .home-f-events .txt-content-gap {
+    padding-left: 11px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .home-f-events .txt-content-gap p {
+    margin: 20px 0 50px;
+  }
+  .hero-section h1 {
+    font-size: 60px;
+  }
+  header .contact-btn {
+    margin-left: 0;
+  }
+  header .btn.btn-primary {
+    margin: 0 10px;
+  }
+  header .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 6px 10px;
+  }
+  .inner-banner h1 {
+    font-size: 50px;
+  }
+  .event-valet .content-bx {
+    padding: 0px 0 0 30px;
+  }
+  .event-valet .content-bx .divider {
+    height: 60px;
+  }
+  .event-valet .e-w-content {
+    padding: 30px 20px 50px 35px;
+  }
+  .event-valet .e-w-container {
+    margin-top: 0;
+  }
+  .event-valet .e-w-content {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .event-valet .e-w-img {
+    position: static;
+    max-width: 720px;
+    margin: auto;
+    padding: 0px 12px;
+    width: 100%;
+  }
+  .event-valet .e-w-content {
+    width: 100%;
+  }
+  .home-f-events .f-wrap .f-box {
+    width: 100%;
+  }
+  .home-f-events .custom-nav {
+    transform: none;
+    justify-content: center;
+    position: static;
+    padding-top: 30px;
+  }
+  .home-f-events .carousel-container {
+    padding: 30px 0px 30px 0;
+  }
+  .home-f-events .txt-content-gap h2 {
+    font-size: 50px;
+  }
+  .Partner-restaurants h2 {
+    font-size: 50px;
+  }
+  .download-app h2 {
+    font-size: 40px;
+  }
+  .home-f-events .f-wrap .f-box {
+    height: auto;
+  }
+  .hero-section {
+    padding: 50px 0 50px;
+  }
+  .hero-section .p-three {
+    right: 24%;
+  }
+  .hero-section .p-two {
+    right: 0%;
+  }
+  .hero-section .p-one {
+    right: 28%;
+  }
+  .h-services {
+    padding: 40px 0 40px;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+  .inner-banner,
+  .inner-banner.reservation-bnr {
+    padding: 60px 0;
+  }
+  .pb-100 {
+    padding-bottom: 60px;
+  }
+  .pt-100 {
+    padding-top: 60px;
+  }
+  .unique_title,
+  .online-reservation h2 {
+    font-size: 40px;
+  }
+  footer .logo-side {
+    max-width: 100%;
+    text-align: center;
+  }
+  footer .social-icon {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    border-bottom: 1px solid #5e5e5e;
+    padding-bottom: 20px;
+  }
+  .future-event .bx-item {
+    width: 100%;
+  }
+  footer .logo-side small {
+    border-bottom: 0;
+  }
+  .inner-banner.reservation-bnr {
+    padding: 80px 0 80px;
+}
+.online-reservation h4{
+  font-size: 22px;
+}
+.online-reservation {
+  padding: 60px 0;
+}
+.reservation-btm {
+  padding: 60px 0;
+}
+.reservation-btm p{
+  font-size: 22px;
+}
+.online-reservation .rounded-pill{
+  padding: 14px 30px;
+}
+.modal-btn-wrap{
+  margin-top: 50px;
+}
+}
+@media only screen and (max-width: 768px) {
+  .reservation-btm {
+    padding: 30px 0;
+}
+  .online-reservation h4{
+    font-size: 18px;
+  }
+  .event-valet .vid-content {
+    margin: 0;
+    padding-top: 30px;
+  }
+  .event-valet .content-bx {
+    padding: 20px 0 0;
+  }
+  .event-valet .e-w-img {
+    max-width: 540px;
+  }
+  footer h5 {
+    margin-bottom: 5px;
+  }
+  footer .get-it-now {
+    margin: 30px auto 30px auto;
+  }
+
+  .h-services .s-wrap::before {
+    display: none;
+  }
+  .h-services .s-wrap ul {
+    padding-left: 0;
+    padding-top: 15px;
+  }
+  .h-services .s-wrap ul li {
+    margin-bottom: 25px;
+  }
+  .download-app .app-det {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .download-app p {
+    margin: auto;
+  }
+  .download-app h2 {
+    margin: 0 auto 30px;
+  }
+  .download-app .btn-wrap {
+    justify-content: center;
+  }
+  .Partner-restaurants .Partner-slider .slick-slide {
+    height: 450px;
+  }
+
+  .home-f-events .txt-content-gap h2,
+  .download-app h2,
+  .Partner-restaurants h2 {
+    font-size: 30px;
+  }
+  footer .get-it-now h2 {
+    font-size: 26px;
+  }
+  .home-f-events .r-event .shp-bx h5 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .home-f-events .r-event .shp-bx .f-btn {
+    margin-top: 10px;
+  }
+  .home-f-events .r-event .shp-bx b {
+    font-size: 30px;
+  }
+  .Partner-restaurants {
+    padding-top: 40px;
+  }
+  .Partner-restaurants .Partner-slider {
+    margin-top: 40px;
+  }
+  .download-app {
+    padding: 30px 0;
+  }
+  .home-f-events .txt-content-gap {
+    padding: 30px 15px;
+  }
+  .home-f-events .f-wrap .r-event {
+    height: 500px;
+  }
+  .hero-section h1 {
+    font-size: 40px;
+    line-height: normal;
+  }
+  .inner-banner h1 {
+    font-size: 40px;
+  }
+  .future-event .rght-bx .child-bx p {
+    font-size: 18px;
+  }
+  .unique_title,
+  .online-reservation h2 {
+    font-size: 26px;
+  }
+  .future-event .rght-bx .blckbx > div h4 {
+    font-size: 26px;
+    margin: 0 auto 15px;
+  }
+  .online-reservation .txt-bx {
+    margin-bottom: 30px;
+}
+.online-reservation .pagination {
+  margin-top: 30px;
+}
+
+.modal-container .modal-body h2{
+  font-size: 26px;
+}
+.mdl-content h5{
+  font-size: 18px;
+}
+.mdl-content span{
+  margin-bottom: 10px;
+}
+}
+
+@media only screen and (max-width: 576px) {
+  .home-f-events .item p {
+    font-size: 18px;
+  }
+
+  .inner-banner,
+  .inner-banner.reservation-bnr {
+    padding: 30px 0;
+  }
+  .pb-100 {
+    padding-bottom: 30px;
+  }
+  .event-valet .e-w-container {
+    margin-bottom: 30px;
+  }
+  .event-valet .e-w-content {
+    margin-top: 30px;
+  }
+  .event-valet .content-bx .divider {
+    height: 30px;
+  }
+  .event-valet .content-bx .unique_title::after {
+    margin-top: 10px;
+  }
+  .pt-100 {
+    padding-top: 30px;
+  }
+  .future-event .rght-bx {
+    height: auto;
+  }
+  .future-event .rght-bx .child-bx {
+    width: 100%;
+    height: auto;
+  }
+  .home-f-events .r-event .shp-bx {
+    padding: 15px;
+  }
+  .Partner-restaurants .custom-nav-wrap button,
+  .home-f-events .custom-nav button {
+    width: 40px;
+    height: 40px;
+  }
+  .Partner-restaurants .custom-nav-wrap button img,
+  .home-f-events .custom-nav button img {
+    width: 20px;
+  }
+  .Partner-restaurants .custom-nav-wrap {
+    gap: 20px;
+  }
+  .Partner-restaurants .Partner-slider .slick-slide {
+    height: 360px;
+  }
+  .Partner-restaurants .slider-item h6 {
+    font-size: 20px;
+  }
+  .hero-section {
+    background-position: right;
+  }
+  .hero-section .btn-wrap {
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  .hero-section h1 {
+    font-size: 32px;
+    padding: 10px 0 10px;
+  }
+  .inner-banner h1 {
+    font-size: 32px;
+  }
+  .time-tag {
+    display: none !important;
+  }
+  .home-f-events .txt-content-gap h2,
+  .download-app h2,
+  .Partner-restaurants h2,
+  .h-services .s-wrap h4 {
+    font-size: 26px;
+  }
+  .hero-section {
+    padding: 30px 0 30px;
+  }
+  .download-app h2 {
+    margin: 0 auto 15px;
+    font-weight: normal;
+  }
+  .f-btn {
+    padding: 15px 40px;
+  }
+  .hero-section .btn-wrap a {
+    padding: 14px 21px;
+    max-width: 197px;
+  }
+  .hero-section .content-bx {
+    text-align: center;
+  }
+  .hero-section p {
+    line-height: normal;
+  }
+  .home-f-events .txt-content-gap p {
+    margin: 20px 0 20px;
+  }
+  footer .policy {
+    padding: 15px 0 15px;
+  }
+  footer {
+    padding: 30px 0;
+  }
+  footer .get-it-now {
+    margin: 30px auto 0px auto;
+  }
+  footer .in-wrap button {
+    padding: 0 15px;
+    font-size: 14px;
+  }
+  .download-app p {
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+  }
+  footer h5 {
+    font-size: 18px;
+  }
+  .h-services .img-con-bx {
+    padding-right: 0;
+  }
+  header .navbar-brand img {
+    max-width: 90px;
+    object-fit: contain;
+  }
+  header .navbar {
+    padding: 0;
+  }
+  header .navbar-collapse {
+    padding-bottom: 10px;
+  }
+  .future-event .rght-bx .blckbx {
+    height: auto;
+  }
+  footer .policy a {
+    display: block;
+  }
+  .future-event .lft-bx p {
+    font-size: 20px;
+  }
+  .event-valet .e-w-content {
+    padding: 30px 15px 50px 15px;
+  }
+  .inner-banner .universal-btn.btn {
+    margin-top: 15px;
+    padding: 14px 21px;
+    font-weight: 500;
+  }
+  .online-reservation .card figure{
+    height: auto;
+  }
+  .online-reservation {
+    padding: 30px 0;
+}
+.online-reservation .card-title {
+  font-size: 18px;
+  line-height: normal;
+}
+.online-reservation .card-body h5{
+  font-size: 16px;
+}
+.online-reservation .rounded-pill{
+  font-size: 14px;
+  padding: 14px 20px;
+  font-weight: normal;
+}
+.reservation-btm p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+.modal-btn-wrap button{
+  width: 100%;
+ }
+ .modal-img {
+  height: auto;
+}
+.modal-btn-wrap {
+  margin-top: 20px;
+}
+.time-selection button{
+  width: calc((100% / 2) - 6px);
+}
+.modal-container .modal-body {
+  padding: 0 15px 20px;
+}
+.modal-container .modal-body h2{
+  font-size: 22px;
+}
+.mdl-content h5{
+  font-size: 16px;
+}
+.mdl-content strong{
+  margin-bottom: 10px;
+}
+.modal-container .payment-details {
+  margin: 12px 0 20px;
+}
+.modal-content .btn-secondary {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 14px 14px;
+}
+.modal-container .customer-details form,
+.modal-container .payment-d-container{
+  margin-bottom: 0;
+}
+}

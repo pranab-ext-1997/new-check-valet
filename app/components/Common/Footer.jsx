@@ -24,7 +24,7 @@ const Footer = () => {
     <footer style={{ backgroundImage: `url(${footerbg.src})` }}>
       <Container fluid>
         <Row>
-          <Col md={4}>
+          <Col md={12} lg={4}>
             <div className="logo-side">
               <a href="#" className="ftr-logo">
                 <Image src={footerLogo} alt="logo" width={150} height={50} />{" "}
@@ -53,7 +53,7 @@ const Footer = () => {
               </div>
             </div>
           </Col>
-          <Col md={2}>
+          <Col lg={2} xs={"auto"}>
             <h5>Home</h5>
             <ul>
               <li>
@@ -70,7 +70,7 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col md={2}>
+          <Col lg={2} xs={"auto"}> 
             <h5>Services</h5>
             <ul>
               <li>

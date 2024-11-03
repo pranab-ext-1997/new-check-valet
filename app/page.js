@@ -50,6 +50,14 @@ const Home = () => {
     rtl: true,
     arrows: false,
     afterChange: (index) => handleImageChange(index),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1.5,
+        },
+      },
+    ],
   };
 
   const handleImageChange = (index) => {
@@ -96,7 +104,28 @@ const Home = () => {
     autoplaySpeed: 2000,
     cssEase: 'linear',
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2.5,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1.5,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1.2,
+        },
+      },
+    ],
   };
+  
 
   const goToPrev = () => {
     sliderReftwo.current.slickPrev();
@@ -190,7 +219,7 @@ const Home = () => {
         <div className="s-wrap">
           <Container fluid>
             <Row>
-              <Col md={6}>
+              <Col col={12} md={6}>
                 <div className="img-con-bx">
                   <h4>{content?.valet_services_drivers?.title}</h4>
                   <p className="text-center">{content?.valet_services_drivers?.content}</p>
@@ -198,7 +227,7 @@ const Home = () => {
                   <p className="btm-title">{content?.valet_services_drivers?.content_after_image}</p>
                 </div>
               </Col>
-              <Col md={6}>
+              <Col col={12} md={6}>
                 <ul>
                   {content?.valet_services_drivers?.services?.map((data, index) => (
                     <li key={index}>
@@ -314,8 +343,8 @@ const Home = () => {
               </div>
             </Col>
             <Col md={6}>
-              <div className="app-view"></div>
-              <img src={appview.src} alt="appview" />
+              <div className="app-view">  <img src={appview.src} alt="appview" /></div>
+            
             </Col>
           </Row>
         </Container>

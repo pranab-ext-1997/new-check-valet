@@ -1,14 +1,12 @@
-'use client'; 
+'use client';
 
-import React, { useRef, useState } from "react"; 
+import React, { useRef, useState } from "react";
 import { Button, Container, Row, Col, Form } from "react-bootstrap";
-import Image from "next/image"; 
+import Image from "next/image";
 import innerbanner from "../assets/images/inner-banner.png";
 import eventvalet from "../assets/images/event-valet.png";
 import eventvaletTwo from "../assets/images/event-valet-two.png";
-import demoVideo from "../assets/video/demo-video.mp4"; 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
+import demoVideo from "../assets/video/demo-video.mp4";
 
 import boxwrapOne from "../assets/images/bx-wrap-one.png";
 import boxwrapTwo from "../assets/images/bx-wrap-two.png";
@@ -22,7 +20,7 @@ import { useRouter } from "next/navigation";
 const Event = () => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const router = useRouter(); 
+  const router = useRouter();
 
   const togglePlay = () => {
     const video = videoRef.current;
@@ -116,7 +114,7 @@ const Event = () => {
             <Col md={6}>
               <div className="video-player">
                 <div className="v-wrap">
-                <video
+                  <video
                     ref={videoRef}
                     width="100%"
                     height="100%"
@@ -124,8 +122,8 @@ const Event = () => {
                     onClick={togglePlay}
                     preload="metadata"
                   >
-                    <source src={demoVideo} type="video/mp4" /> 
-                    Your browser does not support the video tag.
+                    <source src={demoVideo} type="video/mp4" />
+               
                   </video>
 
 
@@ -184,7 +182,7 @@ const Event = () => {
                 alt=""
                 layout="responsive"
                 width={300}
-                height={200} 
+                height={200}
               />
               <p>Cheeky Peach Valet Service</p>
             </div>
@@ -206,8 +204,8 @@ const Event = () => {
                   src={boxwrapTwo}
                   alt=""
                   layout="responsive"
-                  width={300} 
-                  height={200} 
+                  width={300}
+                  height={200}
                 />
                 <p>Patchogue Theatre Valet Parking</p>
               </div>
@@ -216,8 +214,8 @@ const Event = () => {
                   src={boxwrapThree}
                   alt=""
                   layout="responsive"
-                  width={300} 
-                  height={200} 
+                  width={300}
+                  height={200}
                 />
                 <p>Strong Island Fight Night's Self-Parking</p>
               </div>
