@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
-import { useRouter } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import Image from "next/image";
 import logo from "../../assets/images/checkvaleylogo.png";
 import search from "../../assets/images/icon/search.svg";
@@ -16,9 +16,25 @@ const Header = () => {
     headerMenu: null,
   });
 
-  const [isSticky, setIsSticky] = useState(false); // State for tracking sticky class
+  const [isSticky, setIsSticky] = useState(false); 
 
   const router = useRouter();
+
+  const cleanPath = (path) => {
+    if (path === "/") {
+      return path; 
+    }
+    
+
+    if ( path.endsWith("/")) {
+      return path.slice(0, -1); 
+    }
+  
+    return path; 
+  };
+
+  const isActive = (path) => usePathname() === path;
+  
 
   const Headerdata = async () => {
     try {
@@ -49,7 +65,6 @@ const Header = () => {
     }
   };
 
-  // Scroll handler for adding sticky class
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 200) {
@@ -81,7 +96,6 @@ const Header = () => {
         className={`fixed-top ${isSticky ? "sticky" : ""}`}
       >
         <Container fluid>
-          {console.log(content?.header?.logo, "contentcontent")}
           <Navbar.Brand onClick={() => router.push("/")}>
             <Image src={content?.header?.logo} alt="logo" className="App-logo" width={150} height={50} />
           </Navbar.Brand>
@@ -90,8 +104,9 @@ const Header = () => {
             <Nav className="m-auto">
               {content?.headerMenu?.map((data, index) => (
                 (data?.title !== 'More' && data?.title !== 'The Experience' && data?.title !== 'Store') ? (
-                  <Nav.Link key={index} onClick={() => router.push(data?.url)}>
+                  <Nav.Link key={index} className={isActive(cleanPath(data?.url)) &&"active"}  onClick={() => router.push(data?.url)}>
                     {data?.title}
+                
                   </Nav.Link>
                 ) : (
                   <Nav key={index} style={{ padding: '6px 10px', fontSize:'14px' }}>
