@@ -193,9 +193,7 @@ const Event = () => {
                 <div>
                   <h4>Patchogue Event Parking</h4>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy.
+                  Our Luxury Bridal Valet Service provides an elegant and seamless arrival experience for weddings. From red carpet entry for the bridal party to attentive service for guests, we ensure every detail enhances the special day.
                   </p>
                 </div>
               </div>
