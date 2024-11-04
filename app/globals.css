@@ -1,3 +1,5 @@
+
+
 :root {
   --primary-color: #48419c;
   --white: #ffffff;
@@ -12,11 +14,10 @@
 }
 
 body {
-  font-family: "Inter";
+  font-family: "Poppins";
   
 }
 body, html {
-  font-family: "Inter";
   overflow-x: hidden;
 }
 p,
@@ -92,6 +93,9 @@ figure {
 }
 .pb-100 {
   padding-bottom: 100px;
+}
+a{
+  text-decoration: none;
 }
 /*=====Header=====*/
 
@@ -421,26 +425,25 @@ span.v-two {
 }
 .home-f-events .f-wrap .f-box {
   width: 50%;
-  height: 1000px;
+  height: 817px;
 }
 .home-f-events .f-wrap .l-event {
   position: relative;
 }
 .home-f-events .custom-nav {
-  position: absolute;
-  bottom: 32px;
+  padding-top: 17px;
   display: flex;
-  left: 50%;
-  transform: translateX(-50%);
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 .home-f-events .custom-nav button {
   outline: 0;
   background-color: transparent;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   border-radius: 100%;
   border: 1.42px solid #ffffff;
-  margin: 0 15px;
   transition: all 0.5s;
   display: flex;
   align-items: center;
@@ -458,7 +461,7 @@ span.v-two {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 60px 15px 60px 0;
+  padding: 50px 15px 28px 0;
 }
 .home-f-events .txt-content-gap h2 {
   color: var(--white);
@@ -478,7 +481,7 @@ span.v-two {
 .home-f-events .txt-content-gap p {
   color: var(--white);
   font-size: 18px;
-  margin: 20px 0 100px;
+  margin: 15px 0 15px;
   max-width: 406px;
   width: 100%;
   font-weight: 400;
@@ -507,7 +510,7 @@ span.v-two {
 }
 .home-f-events .carousel-container {
   background-color: #696bc0;
-  padding: 50px 50px 50px 0;
+  padding: 23px 23px 23px 0;
 }
 
 .home-f-events .slick-next:before,
@@ -521,7 +524,7 @@ span.v-two {
   object-fit: cover;
 }
 .home-f-events .item {
-  height: 285px;
+  height: 294px;
   position: relative;
 }
 .home-f-events .item::before {
@@ -530,21 +533,17 @@ span.v-two {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 50%;
   z-index: 1;
-  background: linear-gradient(
-    181.98deg,
-    rgba(0, 0, 0, 0) 39.52%,
-    #000000 102.94%
-  );
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 116.39%);
 }
 .home-f-events .item p {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 22px;
+  left: 20px;
   color: var(--white);
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 24px;
   padding: 10px;
   z-index: 1;
@@ -581,11 +580,11 @@ span.v-two {
 .home-f-events .r-event .shp-bx h5 {
   font-size: 30px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 45px;
   color: var(--white);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   max-width: 382px;
-  width: 100;
+  width: 100%;
 }
 .home-f-events .r-event .shp-bx b {
   display: block;
@@ -658,11 +657,12 @@ span.v-two {
   margin-bottom: 0;
 }
 .h-services .s-wrap ul li p {
-  color: #636363;
+  color: #4B4B4B;
 }
 .h-services .s-wrap ul li b {
   margin-bottom: 10px;
   display: block;
+  color: var(--black);
 }
 /*=====Home-services=====*/
 
@@ -1832,15 +1832,13 @@ footer .copy-rgt {
 }
 .online-reservation .card {
   border: none;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: all 0.5s linear;
 }
 .online-reservation .card:hover {
-  box-shadow: rgb(109 109 214) 0px 3px 8px;
   transform: translateY(-3px);
 }
 .online-reservation .card figure {
-  height: 300px;
+  height: 420px;
   width: 100%;
   margin: 0;
 }
@@ -1850,7 +1848,7 @@ footer .copy-rgt {
   object-fit: cover;
 }
 .online-reservation .card-body {
-  padding: 10px 10px;
+  padding: 5px 0px;
 }
 .online-reservation .card-title {
   font-size: 20px;
@@ -1858,6 +1856,7 @@ footer .copy-rgt {
   line-height: 30px;
   color: var(--black);
   margin-bottom: 10px;
+  min-height: 60px;
 }
 .online-reservation .card-text {
   color: #2e2e2e;

@@ -179,7 +179,7 @@ const Home = () => {
                   </div>
                 ))}
               </Slider>
-
+            </div>
               {/* Custom Navigation Buttons */}
               <div className="custom-nav">
                 <div className="prev-btn" onClick={prevSlide}>
@@ -193,7 +193,6 @@ const Home = () => {
                   </button>
                 </div>
               </div>
-            </div>
           </div>
 
           {/* Event Image (updates based on the slider) */}

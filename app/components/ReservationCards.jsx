@@ -23,7 +23,7 @@ const ReservationCards = ({ val }) => {
           <Card.Text>
             {val?.description}
           </Card.Text>
-          <div className="d-flex justify-content-between align-items-center mt-4">
+          <div className="d-flex justify-content-between align-items-center">
             <h5>
               <span>{val?.time}</span> | <span>${val?.price}</span>
             </h5>

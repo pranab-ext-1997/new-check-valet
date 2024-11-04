@@ -1,8 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container } from "react-bootstrap";
-import "@fontsource/inter";
-import "@fontsource/inter/400.css";
-import "@fontsource/inter/400-italic.css"; 
+import "@fontsource/poppins";
+import "@fontsource/poppins/400.css"; 
+import "@fontsource/poppins/400-italic.css"; 
 import Header from "./components/Common/Header";
 
 import Footer from "./components/Common/Footer";
