@@ -119,15 +119,15 @@ const Header = () => {
               ))}
             </Nav>
             <div className="right-side d-flex align-items-center">
-              {/* <Button>
+              <Button>
                 <Image src={search} alt="icon" width={24} height={24} />
-              </Button> */}
-              {/* <Button>
+              </Button>
+              <Button>
                 <Image src={cart} alt="icon" width={24} height={24} />
-              </Button> */}
-              {/* <Button>
+              </Button>
+              <Button>
                 <Image src={user} alt="icon" width={24} height={24} />
-              </Button> */}
+              </Button>
               <a
                 href="tel:6319720797"
                 className="d-flex align-items-center contact-btn"
