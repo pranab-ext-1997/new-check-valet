@@ -10,6 +10,7 @@ import demoVideoPoster from "../assets/images/safe-home-video-thumb.png";
 import demoVideo from "../assets/video/demo-video.mp4";
 import playicon from "../assets/images/icon/play-white-icon.svg";
 import pauseicon from "../assets/images/icon/pouse-white-icon.svg";
+import { flashmsg } from '../GlobalFunction';
 
 const Safehome = () => {
        const videoRef = useRef(null);
@@ -56,7 +57,7 @@ const Safehome = () => {
                                                  <div>
                                                         <strong>Valet Project</strong>
                                                         <p>By supporting The Safe Home Valet Project, you contribute to creating a safer community and preventing accidents caused by drunk driving.</p>
-                                                        <a href="#" className="f-btn">Donate</a>
+                                                        <a onClick={()=>flashmsg()} className="f-btn">Donate</a>
                                                  </div>
                                           </div>
                                    </div>
