@@ -38,7 +38,7 @@ const Reservation = () => {
         <Container>
           <h1>Make A Reservation</h1>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry
+          Our Luxury Bridal Valet Service provides an elegant and seamless arrival experience for weddings. From red carpet entry for the bridal party to attentive service for guests, we ensure every detail enhances the special day.
           </p>
         </Container>
       </section>

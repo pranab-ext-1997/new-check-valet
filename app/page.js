@@ -268,8 +268,7 @@ const Home = () => {
             <div className="slider-des">
               <h6>That MeetBall Place</h6>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
+              Enjoy a modern twist on classic comfort foods, from handcrafted meatballs to artisan pizzas and gourmet salads, all in a warm and inviting atmosphere.
               </p>
 
               <a href="#">
@@ -282,8 +281,7 @@ const Home = () => {
             <div className="slider-des">
               <h6>That MeetBall Place</h6>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
+              Enjoy a modern twist on classic comfort foods, from handcrafted meatballs to artisan pizzas and gourmet salads, all in a warm and inviting atmosphere.
               </p>
 
               <a href="#">
@@ -296,8 +294,7 @@ const Home = () => {
             <div className="slider-des">
               <h6>That MeetBall Place</h6>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
+              Enjoy a modern twist on classic comfort foods, from handcrafted meatballs to artisan pizzas and gourmet salads, all in a warm and inviting atmosphere.
               </p>
 
               <a href="#">
@@ -310,8 +307,7 @@ const Home = () => {
             <div className="slider-des">
               <h6>That MeetBall Place</h6>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
+              Enjoy a modern twist on classic comfort foods, from handcrafted meatballs to artisan pizzas and gourmet salads, all in a warm and inviting atmosphere.
               </p>
 
               <a href="#">

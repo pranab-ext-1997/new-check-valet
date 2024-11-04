@@ -588,8 +588,7 @@ export const StepThree = ({booking,setBooking}) => {
             </Form>
 
             <p className="disclaimer-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Our Luxury Bridal Valet Service provides an elegant and seamless arrival experience for weddings. From red carpet entry for the bridal party to attentive service for guests, we ensure every detail enhances the special day.
             </p>
           </div>
         </div>
