@@ -165,7 +165,7 @@ const Home = () => {
               <div className="txt-content">
                 <h2>Featured Events</h2>
                 <p>Premium Valet Parking Solutions: Providing Luxurious Services while Enhancing your Convenience.</p>
-                <a href="#" className="f-btn">View All</a>
+                <a onClick={()=>router.push('/events')} className="f-btn">View All</a>
               </div>
             </div>
 
@@ -208,7 +208,7 @@ const Home = () => {
               <span>Free Shipping</span>
               <h5>Strong Island Fight Night's Valet Parking</h5>
               <b>$ 20.00</b>
-              <a href="#" className="f-btn">Book Now</a>
+              <a onClick={()=>router.push('/reservation')} className="f-btn">Book Now</a>
             </div>
           </div>
         </div>

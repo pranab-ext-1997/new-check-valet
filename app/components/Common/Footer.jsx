@@ -19,6 +19,7 @@ import {
   Form,
 } from "react-bootstrap";
 
+
 const Footer = () => {
   return (
     <footer style={{ backgroundImage: `url(${footerbg.src})` }}>
@@ -57,34 +58,34 @@ const Footer = () => {
             <h5>Home</h5>
             <ul>
               <li>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
-                <a href="#">Book Now</a>
+                <a href="/events">Book Now</a>
               </li>
               <li>
-                <a href="#">Safe Home Valet</a>
+                <a href="/safe-home-valet">Safe Home Valet</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#">The Experience</a>
-              </li>
+              </li> */}
             </ul>
           </Col>
           <Col lg={2} xs={"auto"}> 
             <h5>Services</h5>
             <ul>
-              <li>
+              {/* <li>
                 <a href="#">Store</a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="#">Faq's</a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="#">Terms & Conditions</a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="#">Privacy Policy</a>
-              </li>
+              </li> */}
             </ul>
           </Col>
           {/* <Col md={2}>
