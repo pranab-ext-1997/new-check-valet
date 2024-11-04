@@ -22,7 +22,7 @@ import pslidertwo from "./assets/images/partner-slider-two.png";
 import psliderthree from "./assets/images/partner-slider-three.png";
 import psliderfour from "./assets/images/partner-slider-four.png";
 import apiRequest from "./Api";
-import { seperataURL } from "./GlobalFunction";
+import { flashmsg, seperataURL } from "./GlobalFunction";
 
 const Home = () => {
   const sliderRef = useRef(null); // Reference for the slider
@@ -270,7 +270,7 @@ const Home = () => {
               Enjoy a modern twist on classic comfort foods, from handcrafted meatballs to artisan pizzas and gourmet salads, all in a warm and inviting atmosphere.
               </p>
 
-              <a href="#">
+              <a onClick={()=>flashmsg()}>
                 Book Your Reservation <img src={linkicon.src} alt="link" />
               </a>
             </div>
@@ -283,7 +283,7 @@ const Home = () => {
               Enjoy a modern twist on classic comfort foods, from handcrafted meatballs to artisan pizzas and gourmet salads, all in a warm and inviting atmosphere.
               </p>
 
-              <a href="#">
+              <a onClick={()=>flashmsg()}>
                 Book Your Reservation <img src={linkicon.src} alt="link" />
               </a>
             </div>
@@ -296,7 +296,7 @@ const Home = () => {
               Enjoy a modern twist on classic comfort foods, from handcrafted meatballs to artisan pizzas and gourmet salads, all in a warm and inviting atmosphere.
               </p>
 
-              <a href="#">
+              <a onClick={()=>flashmsg()}>
                 Book Your Reservation <img src={linkicon.src} alt="link" />
               </a>
             </div>
@@ -309,7 +309,7 @@ const Home = () => {
               Enjoy a modern twist on classic comfort foods, from handcrafted meatballs to artisan pizzas and gourmet salads, all in a warm and inviting atmosphere.
               </p>
 
-              <a href="#">
+              <a onClick={()=>flashmsg()}>
                 Book Your Reservation <img src={linkicon.src} alt="link" />
               </a>
             </div>
