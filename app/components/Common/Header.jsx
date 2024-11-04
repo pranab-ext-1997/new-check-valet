@@ -9,6 +9,7 @@ import cart from "../../assets/images/icon/cart.svg";
 import user from "../../assets/images/icon/user.svg";
 import call from "../../assets/images/icon/call.svg";
 import apiRequest from "../../Api/index";
+import { flashmsg } from "@/app/GlobalFunction";
 
 const Header = () => {
   const [content, setContent] = useState({
@@ -119,13 +120,13 @@ const Header = () => {
               ))}
             </Nav>
             <div className="right-side d-flex align-items-center">
-              <Button>
+              <Button onClick={()=>flashmsg()}>
                 <Image src={search} alt="icon" width={24} height={24} />
               </Button>
-              <Button>
+              <Button onClick={()=>flashmsg()}>
                 <Image src={cart} alt="icon" width={24} height={24} />
               </Button>
-              <Button>
+              <Button onClick={()=>flashmsg()}>
                 <Image src={user} alt="icon" width={24} height={24} />
               </Button>
               <a

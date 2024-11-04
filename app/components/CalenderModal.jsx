@@ -238,8 +238,12 @@ export const StepOne = ({
           <Button
             size="lg"
             key={index}
+            className={booking?.slot===time && "active"}
             variant={selectedTime === time ? "primary" : "outline-secondary"}
-            onClick={() => setBooking({...booking,slot:time})}
+            onClick={() => {
+              setSelectedTime(time); 
+              setBooking({ ...booking, slot: time });
+            }}
             style={{ margin: "5px" }}
           >
             {time}
