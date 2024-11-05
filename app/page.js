@@ -271,7 +271,7 @@ const Home = () => {
               </p>
 
               <a onClick={()=>flashmsg()}>
-                Book Your Reservation <img src={linkicon.src} alt="link" />
+              Book Now
               </a>
             </div>
           </div>
@@ -284,7 +284,7 @@ const Home = () => {
               </p>
 
               <a onClick={()=>flashmsg()}>
-                Book Your Reservation <img src={linkicon.src} alt="link" />
+              Book Now
               </a>
             </div>
           </div>
@@ -297,7 +297,7 @@ const Home = () => {
               </p>
 
               <a onClick={()=>flashmsg()}>
-                Book Your Reservation <img src={linkicon.src} alt="link" />
+              Book Now 
               </a>
             </div>
           </div>
@@ -310,7 +310,7 @@ const Home = () => {
               </p>
 
               <a onClick={()=>flashmsg()}>
-                Book Your Reservation <img src={linkicon.src} alt="link" />
+              Book Now
               </a>
             </div>
           </div>

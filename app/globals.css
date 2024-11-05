@@ -1,5 +1,3 @@
-
-
 :root {
   --primary-color: #48419c;
   --white: #ffffff;
@@ -15,9 +13,9 @@
 
 body {
   font-family: "Poppins";
-  
 }
-body, html {
+body,
+html {
   overflow-x: hidden;
 }
 p,
@@ -94,7 +92,7 @@ figure {
 .pb-100 {
   padding-bottom: 100px;
 }
-a{
+a {
   text-decoration: none;
 }
 /*=====Header=====*/
@@ -190,11 +188,16 @@ header .navbar-expand-lg .navbar-nav .nav-link.active {
 header .contact-btn {
   background: linear-gradient(85.97deg, #7bd0ff -78.83%, #008fec 58.17%);
   color: var(--white);
-  padding: 6px 12px;
+  padding: 12px 34px;
   border-radius: 40px;
   font-size: 16px;
   font-weight: 500;
   margin-left: 48px;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s linear;
+}
+header .contact-btn:hover{
+  transform: translateY(-2px);
 }
 header .contact-btn img {
   width: 20px;
@@ -287,7 +290,6 @@ header .dropdown-toggle::after {
   width: 100%;
   transition: all 0.4s linear;
   box-shadow: 0px 4px 12px 0px #00000040;
-  
 }
 .hero-section .btn-wrap a:hover {
   transform: translateY(-2px);
@@ -308,18 +310,17 @@ header .dropdown-toggle::after {
   max-width: 683px;
   width: 100%;
 }
-a{
+a {
   cursor: pointer;
 }
-.hero-section .wh-btn:hover{
-  color: #48419C;
-  border: 1px solid #48419C
-  
+.hero-section .wh-btn:hover {
+  color: #48419c;
+  border: 1px solid #48419c;
 }
-.hero-section .cl-btn:hover{
+.hero-section .cl-btn:hover {
   background-color: #fff;
-  color: #48419C;
-    border: 1px solid #48419C;
+  color: #48419c;
+  border: 1px solid #48419c;
 }
 .hero-section .content-bx span {
   color: #000000c9;
@@ -409,15 +410,13 @@ span.v-two {
 .home-f-events {
   background-color: #7b7de7;
 }
-.home-f-events .txt-content .f-btn{
+.home-f-events .txt-content .f-btn {
   border: 1px solid var(--white);
   transition: all 0.4s linear;
 }
-.home-f-events .txt-content .f-btn:hover{
-  color: #48419C;
-  border: 1px solid #48419C;
- 
-
+.home-f-events .txt-content .f-btn:hover {
+  color: #48419c;
+  border: 1px solid #48419c;
 }
 .home-f-events .f-wrap {
   display: flex;
@@ -500,8 +499,6 @@ span.v-two {
 .f-btn:hover {
   transform: translateY(-2px);
 }
-
-
 
 .home-f-events .f-wrap .r-event > img {
   height: 100%;
@@ -653,11 +650,11 @@ span.v-two {
   margin-bottom: 40px;
   display: block;
 }
-.h-services .s-wrap ul li:last-child{
+.h-services .s-wrap ul li:last-child {
   margin-bottom: 0;
 }
 .h-services .s-wrap ul li p {
-  color: #4B4B4B;
+  color: #4b4b4b;
 }
 .h-services .s-wrap ul li b {
   margin-bottom: 10px;
@@ -1308,19 +1305,21 @@ footer .copy-rgt {
 .future-event .bx-wrap {
   display: flex;
   flex-wrap: wrap;
+  gap: 0 20px;
 }
 .future-event .bx-wrap img {
   width: 100%;
-  height: 100%;
+  height: 100% !important;
   transition: all 0.5s linear;
 }
 .future-event .bx-item {
-  width: 50%;
+  width: calc((100% / 2) - 10px);
 }
 .future-event .rght-bx {
   display: flex;
   flex-wrap: wrap;
-  height: 100%;
+  height: calc(100% - 20px);
+  gap: 20px;
 }
 .future-event .rght-bx .blckbx {
   width: 100%;
@@ -1351,7 +1350,7 @@ footer .copy-rgt {
   z-index: 2;
 }
 .future-event .rght-bx .child-bx {
-  width: 50%;
+  width: calc((100% / 2) - 10px);
   height: 50%;
   position: relative;
   overflow: hidden;
@@ -1386,6 +1385,14 @@ footer .copy-rgt {
   max-width: 220px;
   width: 100%;
   z-index: 2;
+
+}
+.future-event .bx-item  p{
+  transition: all 0.5s linear;
+}
+.future-event .lft-bx:hover p,
+.future-event .rght-bx .child-bx:hover p{
+  bottom: 65px;
 }
 .future-event .lft-bx:before,
 .future-event .rght-bx .child-bx:before {
@@ -1408,7 +1415,7 @@ footer .copy-rgt {
 .modal {
   padding-left: 0 !important;
 }
-.modal.show .modal-dialog{
+.modal.show .modal-dialog {
   max-width: 845px;
 }
 .modal-container .modal-content {
@@ -1432,11 +1439,12 @@ footer .copy-rgt {
   align-items: center;
 }
 .modal-img {
-  height: 272px;
+  height: 300px;
 }
 .modal-img img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .mdl-content {
   margin-top: 10px;
@@ -1633,7 +1641,7 @@ footer .copy-rgt {
   font-weight: 300;
   line-height: 18px;
 }
-.modal-btn-wrap{
+.modal-btn-wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1641,11 +1649,11 @@ footer .copy-rgt {
   gap: 10px;
 }
 .react-datepicker .react-datepicker__day--keyboard-selected {
-  background-color: #6D6DD6;
+  background-color: #6d6dd6;
   color: #fff;
 }
-.react-datepicker .react-datepicker__day:not([aria-disabled=true]):hover {
-  background-color: #6D6DD6;
+.react-datepicker .react-datepicker__day:not([aria-disabled="true"]):hover {
+  background-color: #6d6dd6;
   color: #fff;
   border-radius: 40px;
 }
@@ -1692,7 +1700,7 @@ footer .copy-rgt {
 .Partner-restaurants .Partner-slider .slick-slide {
   float: right;
   line-height: normal;
-  height: 550px;
+  height: 612px;
 }
 .Partner-restaurants .Partner-slider .slick-slide > div {
   height: 100%;
@@ -1710,17 +1718,30 @@ footer .copy-rgt {
   overflow: hidden;
   height: 100%;
 }
+.Partner-restaurants .slider-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background: linear-gradient(180deg, rgba(21, 19, 36, 0) 0%, #151324 88.09%);
+  bottom: 0;
+  left: 0;
+}
 .Partner-restaurants .slider-item .slider-des img {
   max-width: 9px;
 }
 .Partner-restaurants .slider-item .slider-des {
   position: absolute;
-  bottom: -100%;
+  bottom: -88%;
   left: 0;
-  background: #2a2a2ab2;
-  width: 95%;
-  padding: 20px;
-  transition: all 0.5s linear;
+  padding: 20px 20px 50px;
+  transition: all 0.7s linear;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 .Partner-restaurants .slider-item:hover .slider-des {
   bottom: 0;
@@ -1729,23 +1750,33 @@ footer .copy-rgt {
   color: var(--white);
   font-size: 25px;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .Partner-restaurants .slider-item p {
   font-size: 14px;
   font-weight: 300;
-  line-height: 16px;
+  line-height: 21px;
   color: var(--white);
-  padding-bottom: 25px;
-  border-bottom: 1px solid #af9e9e;
 }
 .Partner-restaurants .slider-item a {
   display: flex;
-  justify-content: end;
-  margin-top: 20px;
-  text-decoration: underline;
   color: var(--white);
   gap: 1px;
+  border: 1px solid var(--white);
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 28px auto 0;
+  text-transform: none;
+  padding: 20px 50px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.5s linear;
+}
+.Partner-restaurants .slider-item a:hover {
+  background: linear-gradient(85.97deg, #7bd0ff -78.83%, #008fec 58.17%);
+  color: var(--white);
 }
 /*====Partner-restaurants====*/
 
@@ -1770,7 +1801,7 @@ footer .copy-rgt {
 }
 .download-app p {
   color: var(--white);
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 400;
   line-height: 35px;
   max-width: 400px;
@@ -1782,7 +1813,7 @@ footer .copy-rgt {
   align-items: center;
   gap: 20px;
 }
-.download-app .btn-wrap img{
+.download-app .btn-wrap img {
   width: 100%;
 }
 /*====download-app====*/
@@ -1886,7 +1917,7 @@ footer .copy-rgt {
 }
 .online-reservation .pagination {
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 .online-reservation .page-link {
   border: none;
@@ -2151,7 +2182,7 @@ footer .copy-rgt {
   height: 100%;
   transition: all 0.5s linear;
 }
-.what-we-offer .box:hover img{
+.what-we-offer .box:hover img {
   transform: scale(1.1);
 }
 .what-we-offer .content-bx {
@@ -2198,22 +2229,21 @@ footer .copy-rgt {
 /*====what-we-offer====*/
 
 /*====our-commitment====*/
-.our-commitment .v-d-content{
+.our-commitment .v-d-content {
   max-width: 1154px;
   width: 100%;
   margin: 0 auto 50px;
   text-align: center;
 }
-.our-commitment h3{
+.our-commitment h3 {
   font-size: 50px;
   font-weight: 400;
   color: var(--black);
   margin-bottom: 30px;
 }
-.our-commitment p{
+.our-commitment p {
   font-size: 16px;
   color: var(--black);
   line-height: 30px;
 }
 /*====our-commitment====*/
-
