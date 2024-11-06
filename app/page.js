@@ -125,7 +125,7 @@ const Home = () => {
       },
     ],
   };
-  
+
 
   const goToPrev = () => {
     sliderReftwo.current.slickPrev();
@@ -146,7 +146,7 @@ const Home = () => {
                 <h1 dangerouslySetInnerHTML={{ __html: `${content?.banner?.banner_title}` }} />
                 <p>{content?.banner?.banner_desciption}</p>
                 <div className="btn-wrap">
-                  <a onClick={()=>router.push("/reservation")} className="cl-btn">{content?.banner?.button_one_link?.title}</a>
+                  <a onClick={() => router.push("/reservation")} className="cl-btn">{content?.banner?.button_one_link?.title}</a>
                   <a href="#" className="wh-btn">{content?.banner?.button_two_link?.title}</a>
                 </div>
               </div>
@@ -165,7 +165,7 @@ const Home = () => {
               <div className="txt-content">
                 <h2>Featured Events</h2>
                 <p>Premium Valet Parking Solutions: Providing Luxurious Services while Enhancing your Convenience.</p>
-                <a onClick={()=>router.push('/events')} className="f-btn">View All</a>
+                <a onClick={() => router.push('/events')} className="f-btn">View All</a>
               </div>
             </div>
 
@@ -180,19 +180,19 @@ const Home = () => {
                 ))}
               </Slider>
             </div>
-              {/* Custom Navigation Buttons */}
-              <div className="custom-nav">
-                <div className="prev-btn" onClick={prevSlide}>
-                  <button className="arrow-button">
-                    <img src={leftArrow.src} alt="nav" />
-                  </button>
-                </div>
-                <div className="next-btn" onClick={nextSlide}>
-                  <button className="arrow-button">
-                    <img src={rightArrow.src} alt="nav" />
-                  </button>
-                </div>
+            {/* Custom Navigation Buttons */}
+            <div className="custom-nav">
+              <div className="prev-btn" onClick={prevSlide}>
+                <button className="arrow-button">
+                  <img src={leftArrow.src} alt="nav" />
+                </button>
               </div>
+              <div className="next-btn" onClick={nextSlide}>
+                <button className="arrow-button">
+                  <img src={rightArrow.src} alt="nav" />
+                </button>
+              </div>
+            </div>
           </div>
 
           {/* Event Image (updates based on the slider) */}
@@ -207,7 +207,9 @@ const Home = () => {
               <span>Free Shipping</span>
               <h5>Strong Island Fight Night's Valet Parking</h5>
               <b>$ 20.00</b>
-              <a onClick={()=>router.push('/reservation')} className="f-btn">Book Now</a>
+              <div class="btn-container">
+                <a onClick={() => router.push('/reservation')} className="animate-btn">Book Now</a>
+              </div>
             </div>
           </div>
         </div>
@@ -267,11 +269,11 @@ const Home = () => {
             <div className="slider-des">
               <h6>That MeetBall Place</h6>
               <p>
-              Enjoy a modern twist on classic comfort foods, from handcrafted meatballs to artisan pizzas and gourmet salads, all in a warm and inviting atmosphere.
+                Enjoy a modern twist on classic comfort foods, from handcrafted meatballs to artisan pizzas and gourmet salads, all in a warm and inviting atmosphere.
               </p>
 
-              <a onClick={()=>flashmsg()}>
-              Book Now
+              <a onClick={() => flashmsg()}>
+                Book Now
               </a>
             </div>
           </div>
@@ -280,11 +282,11 @@ const Home = () => {
             <div className="slider-des">
               <h6>That MeetBall Place</h6>
               <p>
-              Enjoy a modern twist on classic comfort foods, from handcrafted meatballs to artisan pizzas and gourmet salads, all in a warm and inviting atmosphere.
+                Enjoy a modern twist on classic comfort foods, from handcrafted meatballs to artisan pizzas and gourmet salads, all in a warm and inviting atmosphere.
               </p>
 
-              <a onClick={()=>flashmsg()}>
-              Book Now
+              <a onClick={() => flashmsg()}>
+                Book Now
               </a>
             </div>
           </div>
@@ -293,11 +295,11 @@ const Home = () => {
             <div className="slider-des">
               <h6>That MeetBall Place</h6>
               <p>
-              Enjoy a modern twist on classic comfort foods, from handcrafted meatballs to artisan pizzas and gourmet salads, all in a warm and inviting atmosphere.
+                Enjoy a modern twist on classic comfort foods, from handcrafted meatballs to artisan pizzas and gourmet salads, all in a warm and inviting atmosphere.
               </p>
 
-              <a onClick={()=>flashmsg()}>
-              Book Now 
+              <a onClick={() => flashmsg()}>
+                Book Now
               </a>
             </div>
           </div>
@@ -306,11 +308,11 @@ const Home = () => {
             <div className="slider-des">
               <h6>That MeetBall Place</h6>
               <p>
-              Enjoy a modern twist on classic comfort foods, from handcrafted meatballs to artisan pizzas and gourmet salads, all in a warm and inviting atmosphere.
+                Enjoy a modern twist on classic comfort foods, from handcrafted meatballs to artisan pizzas and gourmet salads, all in a warm and inviting atmosphere.
               </p>
 
-              <a onClick={()=>flashmsg()}>
-              Book Now
+              <a onClick={() => flashmsg()}>
+                Book Now
               </a>
             </div>
           </div>
@@ -339,7 +341,7 @@ const Home = () => {
             </Col>
             <Col md={6}>
               <div className="app-view">  <img src={appview.src} alt="appview" /></div>
-            
+
             </Col>
           </Row>
         </Container>

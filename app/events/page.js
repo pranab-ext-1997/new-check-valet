@@ -45,9 +45,12 @@ const Event = () => {
             Our personalized valet service eliminates the hassle of parking,
             letting you relax and enjoy your time.
           </p>
-          <Button className="universal-btn" onClick={() => router.push("/reservation")}>
+          <div class="btn-container">
+          <Button className="animate-btn" onClick={() => router.push("/reservation")}>
             Book a private event
           </Button>
+          </div>
+
         </Container>
       </section>
 

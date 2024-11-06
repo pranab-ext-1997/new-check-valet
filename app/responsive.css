@@ -337,9 +337,7 @@
   .Partner-restaurants .slider-item h6 {
     font-size: 20px;
   }
-  .hero-section {
-    background-position: right;
-  }
+ 
   .hero-section .btn-wrap {
     gap: 10px;
     flex-direction: column;
@@ -352,9 +350,6 @@
   .inner-banner h1 {
     font-size: 32px;
   }
-  .time-tag {
-    display: none !important;
-  }
   .home-f-events .txt-content-gap h2,
   .download-app h2,
   .Partner-restaurants h2,
@@ -362,7 +357,9 @@
     font-size: 26px;
   }
   .hero-section {
-    padding: 30px 0 30px;
+    padding: 381px 0 40px;
+    background-size: cover;
+    background-position: 80% 100%;
   }
   .download-app h2 {
     margin: 0 auto 15px;
@@ -373,7 +370,7 @@
   }
   .hero-section .btn-wrap a {
     padding: 14px 21px;
-    max-width: 197px;
+    max-width: 210px;
   }
   .hero-section .content-bx {
     text-align: center;

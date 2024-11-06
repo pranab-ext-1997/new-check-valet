@@ -57,7 +57,10 @@ const Safehome = () => {
                                                  <div>
                                                         <strong>Valet Project</strong>
                                                         <p>By supporting The Safe Home Valet Project, you contribute to creating a safer community and preventing accidents caused by drunk driving.</p>
-                                                        <a onClick={()=>flashmsg()} className="f-btn">Donate</a>
+                                                        <div class="btn-container">
+                                                               <a onClick={() => flashmsg()} className="animate-btn">Donate</a>
+                                                        </div>
+
                                                  </div>
                                           </div>
                                    </div>
