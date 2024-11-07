@@ -55,7 +55,7 @@ const Reservation = () => {
               {arrayValues.map((val, index) => (
                 <Col lg={4} md={6}
                   key={index}
-                  className="mb-3 mb-md-3 mb-lg-4"
+                  className="mb-3 mb-md-3 mb-lg-4 col-6"
                 >
                   <div>
                     <ReservationCards val={val} />

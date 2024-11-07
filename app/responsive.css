@@ -317,7 +317,7 @@
   }
   .mdl-content {
     margin-top: 30px;
-}
+  }
   .mdl-content h5 {
     font-size: 18px;
   }
@@ -562,25 +562,37 @@
     font-weight: 500;
   }
   .online-reservation .card figure {
-    height: auto;
+    height: 230px;
   }
   .online-reservation {
     padding: 30px 0;
   }
   .online-reservation .card-title {
-    font-size: 18px;
+    font-size: 14px;
     line-height: normal;
   }
+  .online-reservation .card-text {
+    font-size: 10px;
+    line-height: 15px;
+    margin-bottom: 20px;
+  }
+  .online-reservation .card-body .d-flex {
+    flex-direction: column;
+    gap: 20px;
+  }
   .online-reservation .card-body h5 {
-    font-size: 16px;
+    font-size: 14px;
+    width: 100%;
+    color: #000;
   }
   .online-reservation .rounded-pill {
     font-size: 14px;
-    padding: 14px 20px;
+    padding: 11px 14px;
     font-weight: normal;
+    margin-right: auto;
   }
   .reservation-btm p {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     line-height: normal;
   }
@@ -936,27 +948,30 @@
   .safe-home-video {
     padding-bottom: 100px;
   }
-  .modal-container .mdl-title{
+  .modal-container .mdl-title {
     justify-content: center;
   }
   .mdl-content > div:first-child {
     display: flex;
     margin-bottom: 40px;
-}
-.mdl-content > div:first-child span {
-  white-space: nowrap;
-}
-.mdl-content p{
-  text-align: center;
-  font-size: 10px;
-  line-height: 15px;
-  margin-bottom: 60px;
-}
-.mdl-title h5{
-  color: #000;
-}
-.mdl-rght h4{
-  text-align: center;
-  color: #000;
-}
+  }
+  .mdl-content > div:first-child span {
+    white-space: nowrap;
+  }
+  .mdl-content p {
+    text-align: center;
+    font-size: 10px;
+    line-height: 15px;
+    margin-bottom: 60px;
+  }
+  .mdl-title h5 {
+    color: #000;
+  }
+  .mdl-rght h4 {
+    text-align: center;
+    color: #000;
+  }
+  .online-reservation .card-body {
+    padding: 15px 0px;
+  }
 }
