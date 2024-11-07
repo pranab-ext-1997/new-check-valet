@@ -975,4 +975,45 @@
   .online-reservation .card-body {
     padding: 15px 0px;
   }
+
+  /* Header====Responsive*/
+  header .navbar-expand-lg .navbar-nav .nav-link{
+    font-size: 16px;
+    color: #000;
+  }
+  header {
+    position: relative;
+    z-index: 9;
+  }
+  header .navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: -120%;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    max-width: 332px;
+    width: 100%;
+    z-index: -2;
+    padding: 100px 50px 15px 50px;
+    box-shadow: -5px 14px 13.7px 0px rgba(0, 0, 0, 0.15);
+    transition: right 0.7s linear;
+  }
+  header .collapse:not(.show) {
+    display: block;
+  }
+  header .btn.btn-primary {
+    display: none;
+  }
+  header .navbar-collapse.show {
+    right: 0%;
+  }
+  header .container-fluid {
+    background-color: #fff;
+  }
+  header .m-auto.navbar-nav {
+    gap: 30px;
+    margin-bottom: 30px !important;
+  }
+
+  /* Header====*/
 }
