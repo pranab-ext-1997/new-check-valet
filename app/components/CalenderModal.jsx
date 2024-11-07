@@ -132,10 +132,12 @@ setStep(number+1)
                 {/* <img src={props?.data?.image} alt="Chops Valet" /> */}
               </div>
               <div className="mdl-content">
+                <div>
                 <h5>{props?.data?.title}</h5>
                 <span>
                   {props?.data?.time} | ${props?.data?.price}
                 </span>
+                </div>
                 <strong>
                   PLEASE MEET VALET DIRECTLY BEHIND CHOPS IN MUNICIPAL LOT 6.
                 </strong>

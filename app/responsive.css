@@ -312,8 +312,12 @@
   }
 
   .modal-container .modal-body h2 {
-    font-size: 26px;
+    font-size: 30px;
+    margin-bottom: 30px;
   }
+  .mdl-content {
+    margin-top: 30px;
+}
   .mdl-content h5 {
     font-size: 18px;
   }
@@ -597,7 +601,7 @@
     margin-top: 20px;
   }
   .time-selection button {
-    width: calc((100% / 2) - 6px);
+    width: calc((100% / 3) - 6px);
   }
   .modal-container .modal-body {
     padding: 0 15px 20px;
@@ -606,10 +610,16 @@
     font-size: 22px;
   }
   .mdl-content h5 {
-    font-size: 16px;
+    font-size: 22px;
+    padding-right: 15px;
+    line-height: 33px;
+    margin: 0;
   }
   .mdl-content strong {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
   }
   .modal-container .payment-details {
     margin: 12px 0 20px;
@@ -926,4 +936,27 @@
   .safe-home-video {
     padding-bottom: 100px;
   }
+  .modal-container .mdl-title{
+    justify-content: center;
+  }
+  .mdl-content > div:first-child {
+    display: flex;
+    margin-bottom: 40px;
+}
+.mdl-content > div:first-child span {
+  white-space: nowrap;
+}
+.mdl-content p{
+  text-align: center;
+  font-size: 10px;
+  line-height: 15px;
+  margin-bottom: 60px;
+}
+.mdl-title h5{
+  color: #000;
+}
+.mdl-rght h4{
+  text-align: center;
+  color: #000;
+}
 }

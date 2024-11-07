@@ -1764,6 +1764,7 @@ footer .copy-rgt {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 10px;
+  padding-left: 13px;
 }
 .react-datepicker .react-datepicker__day--keyboard-selected {
   background-color: #6d6dd6;
