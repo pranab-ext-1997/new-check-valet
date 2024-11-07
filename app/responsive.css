@@ -831,4 +831,7 @@
   font-size: 20px;
   font-weight: 600;
 }
+.event-valet .e-w-content p{
+  text-align: center;
+}
 }
