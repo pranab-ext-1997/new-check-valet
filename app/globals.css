@@ -2086,6 +2086,7 @@ footer .copy-rgt {
 }
 .valet-project .img-side img {
   width: 100%;
+  height: 100%;
 }
 .valet-project .content-side h3 {
   color: var(--black);
@@ -2120,10 +2121,11 @@ footer .copy-rgt {
   display: flex;
   margin-left: -110px;
   gap: 46px;
+  padding-right: 15px;
 }
 .valet-project .tx-ig-wrap div:first-child {
   width: 272px;
-  margin-top: 129px;
+  margin-top: 69px;
 }
 .valet-project .tx-ig-wrap div:last-child {
   flex: 1;
