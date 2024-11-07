@@ -252,13 +252,13 @@ const settingstwo = {
               src={currentEventImage.src}
               alt="event"
               onLoad={handleImageLoad} // Trigger when the image has loaded
-              className={isLoaded ? "loaded" : ""} // Apply loaded class for animation
+              className={isLoaded ? "loaded" : ""} // Apply loaded className for animation
             />
             <div className="shp-bx">
               <span>Free Shipping</span>
               <h5>Strong Island Fight Night's Valet Parking</h5>
               <b>$ 20.00</b>
-              <div class="btn-container">
+              <div className="btn-container">
                 <a onClick={() => router.push('/reservation')} className="animate-btn">Book Now</a>
               </div>
             </div>
