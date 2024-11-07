@@ -54,7 +54,7 @@ const Footer = () => {
               </div>
             </div>
           </Col>
-          <Col lg={2} xs={"auto"}>
+          <Col lg={2} xs={"12"}>
             <h5>Home</h5>
             <ul>
               <li>
@@ -71,7 +71,7 @@ const Footer = () => {
               </li> */}
             </ul>
           </Col>
-          <Col lg={2} xs={"auto"}> 
+          <Col lg={2} xs={"12"}> 
             <h5>Services</h5>
             <ul>
               {/* <li>

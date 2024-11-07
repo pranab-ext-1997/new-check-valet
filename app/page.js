@@ -11,6 +11,7 @@ import carouselThree from "./assets/images/machuda.jpg";
 import { Container, Button, Col, Row } from "react-bootstrap";
 import { useRouter } from "next/navigation";
 import leftArrow from "./assets/images/icon/left-arrow-icon.svg";
+import bnrcar from "./assets/images/bnr-car.png";
 import rightArrow from "./assets/images/icon/right-arrow-icon.svg";
 import linkicon from "./assets/images/icon/link-icon.svg";
 import appstore from "./assets/images/icon/app-store.svg";
@@ -54,7 +55,7 @@ const Home = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1.5,
+          slidesToShow: 2.5,
         },
       },
     ],
@@ -138,9 +139,23 @@ const Home = () => {
   return (
     <>
       <section className="hero-section" style={{ backgroundImage: `url(${seperataURL(content?.banner?.banner_image)})` }}>
+        <div className="bnr-car">
+          <div className="circle">
+            <div className="circle-container">
+            <div className="circle-start"></div>
+            <div className="circle-zero"></div>
+            <div className="circle-one"></div>
+            <div className="circle-two"></div>
+            </div>
+            
+              <img src={bnrcar.src} alt="nav" />
+            
+          </div>
+        </div>
         <Container fluid>
           {content?.banner && (
             <div className="wrap">
+
               <div className="content-bx">
                 <span>{content?.banner?.top_title}</span>
                 <h1 dangerouslySetInnerHTML={{ __html: `${content?.banner?.banner_title}` }} />
