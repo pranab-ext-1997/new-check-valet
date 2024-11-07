@@ -2033,6 +2033,7 @@ footer .copy-rgt {
 }
 .online-reservation .rounded-pill:hover {
   transform: translateY(-2px);
+  box-shadow: 0px 4px 12px 0px #00000040;
 }
 .online-reservation .pagination {
   justify-content: center;
