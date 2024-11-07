@@ -87,7 +87,6 @@ const Header = () => {
     Headerdata();
     headerMenu();
   }, []);
-
   return (
     <header>
       <Navbar
