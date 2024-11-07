@@ -2183,10 +2183,10 @@ footer .copy-rgt {
   position: relative;
   height: 500px;
 }
+
 .safe-home-video .video-wrapper {
   position: relative;
   margin-top: -150px;
-  height: 500px;
 }
 .video-wrapper video {
   object-fit: cover;
