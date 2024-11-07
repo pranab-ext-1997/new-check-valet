@@ -2181,6 +2181,7 @@ footer .copy-rgt {
   width: 100%;
   margin: auto;
   position: relative;
+  height: 500px;
 }
 .safe-home-video .video-wrapper {
   position: relative;
