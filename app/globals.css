@@ -1893,8 +1893,8 @@ footer .copy-rgt {
   transition: all 0.5s linear;
 }
 .Partner-restaurants .slider-item a:hover {
-  background: linear-gradient(85.97deg, #7bd0ff -78.83%, #008fec 58.17%);
-  color: var(--white);
+  background: #fff;
+  color: rgba(21, 19, 36, 1);
 }
 /*====Partner-restaurants====*/
 

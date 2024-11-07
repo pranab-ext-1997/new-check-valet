@@ -113,7 +113,7 @@ const Event = () => {
         </div>
 
         <Container>
-          <Row>
+          <Row className="vid-order">
             <Col md={6}>
               <div className="video-player">
                 <div className="v-wrap">
